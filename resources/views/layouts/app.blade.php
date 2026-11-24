@@ -88,15 +88,15 @@
                 <ul class="navbar-nav ms-auto align-items-lg-center">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/home">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Layanan</a>
+                        <a class="nav-link" href="/layanan">Layanan</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="/portfolio">Portfolio</a>
                     </li>
 
                     <li class="nav-item">

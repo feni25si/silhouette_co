@@ -23,7 +23,7 @@
             jahitan yang detail dan personal.
         </p>
 
-        <a href="#" class="btn btn-brand">
+        <a href="/layanan" class="btn btn-brand">
             Explore Our Services
         </a>
 
