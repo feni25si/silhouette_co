@@ -96,6 +96,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('customer.ukuran.index') }}">Ukuran Saya</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="/portfolio">Portfolio</a>
                     </li>
 

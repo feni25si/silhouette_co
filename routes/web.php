@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Customer\DashboardController;
 use App\Http\Controllers\Customer\ProfileController;
 use App\Http\Controllers\Customer\ServiceController;
+use App\Http\Controllers\Customer\MeasurementController;
 
 // Halaman bawaan Laravel
 Route::get('/', function () {
@@ -32,3 +33,9 @@ Route::get('/layanan', [ServiceController::class, 'index'])
 Route::get('/layanan/{id}', [ServiceController::class, 'show'])
     ->name('layanan.detail');
 
+// Data Ukuran Pelanggan
+Route::get('/customer/ukuran', [MeasurementController::class, 'index'])
+    ->name('customer.ukuran.index');
+
+Route::get('/customer/ukuran/tambah', [MeasurementController::class, 'create'])
+    ->name('customer.ukuran.create');
