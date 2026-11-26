@@ -470,60 +470,6 @@
 
                                             <h5 class="mb-0"
                                                 style="font-family: 'Playfair Display', serif;">
-                                                Panjang Muka
-                                            </h5>
-
-                                            <span class="badge rounded-pill ms-auto"
-                                                style="background: #f8e8e4; color: #76574f;">
-                                                cm
-                                            </span>
-                                        </div>
-
-                                        <hr class="my-3">
-
-                                        <!-- Gambar -->
-                                        <div class="text-center mb-3">
-                                            <img src="{{ asset('img/ukuran/Depan Tubuh.png') }}"
-                                                alt="Cara mengukur panjang muka"
-                                                class="img-fluid rounded-3"
-                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
-                                        </div>
-
-                                        <!-- Caption -->
-
-                                        <p class="text-muted text-center mb-3"
-                                            style="font-size: 12px; line-height: 1.6;">
-                                            Ukur dari lekuk leher ditengah muka lurus ke bawah hingga batas pinggang.
-                                        <hr class="my-3">
-
-                                        <!-- Input -->
-                                        <label class="form-label fw-semibold"
-                                            style="font-size: 13px;">
-                                            Hasil Pengukuran (cm)
-                                        </label>
-
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 80">
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <div class="card border-0 shadow-sm rounded-4 h-100">
-                                    <div class="card-body p-3">
-
-                                        <!-- Judul -->
-                                        <div class="d-flex align-items-center gap-2 mb-3">
-                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
-                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
-                                                09
-                                            </span>
-
-                                            <h5 class="mb-0"
-                                                style="font-family: 'Playfair Display', serif;">
                                                 Panjang Punggung
                                             </h5>
 
@@ -574,7 +520,7 @@
                                         <div class="d-flex align-items-center gap-2 mb-3">
                                             <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
                                                 style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
-                                                10
+                                                09
                                             </span>
 
                                             <h5 class="mb-0"
@@ -629,12 +575,12 @@
                                         <div class="d-flex align-items-center gap-2 mb-3">
                                             <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
                                                 style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
-                                                11
+                                                10
                                             </span>
 
                                             <h5 class="mb-0"
                                                 style="font-family: 'Playfair Display', serif;">
-                                                Panjang Bawahan
+                                                Lingkar Pisak
                                             </h5>
 
                                             <span class="badge rounded-pill ms-auto"
@@ -647,18 +593,19 @@
 
                                         <!-- Gambar -->
                                         <div class="text-center mb-3">
-                                            <img src="{{ asset('img/ukuran/Panjang Rok dan Celana.png') }}"
-                                                alt="Cara mengukur panjang bawahan"
+                                            <img src="{{ asset('img/ukuran/L. Pisak.png') }}"
+                                                alt="Cara mengukur lingkar pisak"
                                                 class="img-fluid rounded-3"
                                                 style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
                                         </div>
 
                                         <!-- Caption -->
-
                                         <p class="text-muted text-center mb-3"
                                             style="font-size: 12px; line-height: 1.6;">
-                                            Ukur dari garis pinggang hingga panjang rok atau celana yang diinginkan.
+                                            Ukur dari tengah bagian atas buckle ban pinggang atau kancing bagian depan 
+                                            ke arah bawah melewati selangkangan, lalu ke atas hingga akhir ban pinggang bagian belakang.
                                         </p>
+
                                         <hr class="my-3">
 
                                         <!-- Input -->
@@ -670,28 +617,65 @@
                                         <input type="number"
                                             step="0.1"
                                             class="form-control form-control-sm"
-                                            placeholder="Contoh: 90">
+                                            placeholder="Contoh: 30">
+                                    
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
+
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                11
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Lingkar Ujung Bawah Celana
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/Lingkar ujg cln.png') }}"
+                                                alt="Cara mengukur lingkar ujung bawah celana"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Ukur secara melingkar pada bagian ujung bawah kaki celana.                                       </p>
+
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number"
+                                            step="0.1"
+                                            class="form-control form-control-sm"
+                                            placeholder="Contoh: 12">
 
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <label class="form-label">Panjang Celana (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 100">
-                                <small class="text-muted">Ukur dari pinggang bagian samping hingga batas panjang celana.</small>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <label class="form-label">Panjang Dalam / Pesak Bawah (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 72">
-                                <small class="text-muted">Ukur dari pertemuan jahitan selangkangan hingga ujung kaki bagian dalam.</small>
-                            </div>
-
-                            <div class="col-md-6 mb-4">
-                                <label class="form-label">Lingkar Pesak (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 65">
-                                <small class="text-muted">Ukur dari pinggang depan melewati selangkangan hingga pinggang belakang.</small>
                             </div>
 
                             <div class="col-md-6 mb-4">
@@ -702,7 +686,7 @@
                                         <div class="d-flex align-items-center gap-2 mb-3">
                                             <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
                                                 style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
-                                                14
+                                                12
                                             </span>
 
                                             <h5 class="mb-0"
@@ -751,15 +735,58 @@
                             </div>
 
                             <div class="col-md-6 mb-4">
-                                <label class="form-label">Lingkar Bawah Celana (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 40">
-                                <small class="text-muted">Ukur melingkari bukaan bawah kaki celana.</small>
-                            </div>
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
 
-                            <div class="col-md-6 mb-4">
-                                <label class="form-label">Lingkar Kerung Lengan (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 42">
-                                <small class="text-muted">Ukur melingkari pangkal ketiak hingga ujung bahu.</small>
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                13
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Panjang Bawahan
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/Panjang Rok dan Celana.png') }}"
+                                                alt="Cara mengukur panjang bawahan"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Ukur dari garis pinggang hingga ujung rok atau celana sesuai panjang 
+                                            yang diinginkan. Pastikan meteran mengikuti panjang pakaian yang akan dibuat.                                       </p>
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number"
+                                            step="0.1"
+                                            class="form-control form-control-sm"
+                                            placeholder="Contoh: 70">
+
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-md-6 mb-4">
@@ -770,7 +797,62 @@
                                         <div class="d-flex align-items-center gap-2 mb-3">
                                             <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
                                                 style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
-                                                17
+                                                14
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Lingkar Ketiak
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/Lingkar Ketiak.png') }}"
+                                                alt="Cara mengukur lingkar ketiak"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Lingkarkan pita meteran mengelilingi pangkal lengan melewati puncak bahu 
+                                            hingga bawah ketiak secara pas, jangan terlalu ketat,agar nyaman saat bergerak.                                     </p>
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number"
+                                            step="0.1"
+                                            class="form-control form-control-sm"
+                                            placeholder="Contoh: 70">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
+
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                15
                                             </span>
 
                                             <h5 class="mb-0"
@@ -819,21 +901,171 @@
                             </div>
 
                             <div class="col-md-6 mb-4">
-                                <label class="form-label">Lingkar Lengan Atas (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 30">
-                                <small class="text-muted">Ukur melingkari bagian lengan atas paling besar.</small>
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
+
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                16
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Lingkar Lengan Atas
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/L. atas.png') }}"
+                                                alt="Cara mengukur lingkar lengan atas"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Lingkarkan pita meteran pada bagian lengan atas terbesar secara pas 
+                                            dan tidak menekan kulit, lalu beri sedikit kelonggaran agar nyaman digunakan.
+                                        </p>
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number"
+                                            step="0.1"
+                                            class="form-control form-control-sm"
+                                            placeholder="Contoh: 12">
+
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-md-6 mb-4">
-                                <label class="form-label">Lingkar Pergelangan Tangan (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 16">
-                                <small class="text-muted">Ukur melingkari bagian pergelangan tangan.</small>
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
+
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                17
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Lingkar Pergelangan Tangan
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/L. prglngn tgn.png') }}"
+                                                alt="Cara mengukur lingkar pergelangan tangan"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Lingkarkan pita ukur pada pergelangan tangan di bagian paling kecil. 
+                                            Pastikan pita tidak terlalu ketat agar ukuran tetap nyaman.
+                                        </p>
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number"
+                                            step="0.1"
+                                            class="form-control form-control-sm"
+                                            placeholder="Contoh: 8">
+
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-md-6 mb-4">
-                                <label class="form-label">Lingkar Leher (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 16">
-                                <small class="text-muted">Ukur melingkari bagian pangkal leher.</small>
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
+
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                18
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Lingkar Leher
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/L. lhr.png') }}"
+                                                alt="Cara mengukur lingkar leher"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Lingkarkan pita meteran mengelilingi pangkal leher bagian bawah secara pas tanpa menekan kulit,
+                                            lalu beri sedikit kelonggaran (sekitar 1 jari) agar kerah nyaman saat dipakai..
+                                        </p>
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number"
+                                            step="0.1"
+                                            class="form-control form-control-sm"
+                                            placeholder="Contoh: 13">
+
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col-md-6 mb-4">
