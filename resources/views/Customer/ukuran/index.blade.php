@@ -30,17 +30,6 @@
         box-shadow: 0 8px 20px rgba(0,0,0,0.07);
     }
 
-    .profile-icon {
-        width: 55px;
-        height: 55px;
-        background: #f5eeeb;
-        color: #9b7770;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 23px;
-    }
 
     .btn-measurement {
         background: #d9b9b3;
@@ -76,6 +65,14 @@
 <section class="py-5">
     <div class="container">
 
+        {{-- Notifikasi sukses --}}
+        @if (session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        @endif
+
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
                 <h3 style="font-family: 'Playfair Display', serif;">
@@ -85,7 +82,7 @@
                 <p class="text-muted">
                     Simpan ukuran tubuh beberapa orang dalam satu akun.
                 </p>
-            </div>                                    
+            </div>
 
             <a href="{{ route('customer.ukuran.create') }}" class="btn btn-brand">
                 + Add New Profile
@@ -94,25 +91,21 @@
 
         <div class="row g-4">
 
-            @foreach ($profiles as $profile)
+            @forelse ($profiles as $profile)
 
                 <div class="col-lg-4 col-md-6">
 
                     <div class="profile-card">
 
-                        <div class="profile-icon mb-3">
-                            <i class="bi bi-person"></i>
-                        </div>
-
-                        <h5>{{ $profile['name'] }}</h5>
+                        <h5>{{ $profile->profile_name }}</h5>
 
                         <p class="text-muted mb-2">
-                            {{ $profile['owner'] }}
+                            {{ $profile->owner }}
                         </p>
 
                         <small class="text-muted">
                             Terakhir diperbarui:
-                            {{ $profile['updated_at'] }}
+                            {{ $profile->updated_at->format('d M Y') }}
                         </small>
 
                         <hr>
@@ -135,32 +128,30 @@
 
                 </div>
 
-            @endforeach
+            @empty
 
-        </div>
+                <div class="col-12">
+                    <div class="text-center py-5">
 
-    </div>
-</section>
+                        <i class="bi bi-rulers fs-1 text-muted"></i>
 
-<!-- Panduan Pengukuran -->
-<section class="pb-5">
-    <div class="container">
+                        <h5 class="mt-3">
+                            Belum Ada Profil Ukuran
+                        </h5>
 
-        <div class="guide-box">
+                        <p class="text-muted">
+                            Silakan tambahkan profil ukuran tubuh pertamamu.
+                        </p>
 
-            <h3 style="font-family: 'Playfair Display', serif;">
-                Measurement Guide
-            </h3>
+                        <a href="{{ route('customer.ukuran.create') }}"
+                           class="btn btn-brand">
+                            + Tambah Profil Ukuran
+                        </a>
 
-            <p class="text-muted mt-2">
-                Belum tahu cara mengukur tubuh dengan benar?
-                Pelajari panduan pengukuran sebelum mengisi data.
-            </p>
+                    </div>
+                </div>
 
-            <a href="#"
-               class="btn btn-measurement mt-3 px-4">
-                Learn How to Measure
-            </a>
+            @endforelse
 
         </div>
 

@@ -39,3 +39,15 @@ Route::get('/customer/ukuran', [MeasurementController::class, 'index'])
 
 Route::get('/customer/ukuran/tambah', [MeasurementController::class, 'create'])
     ->name('customer.ukuran.create');
+
+// Measurement profile list
+Route::get('/customer/ukuran', [MeasurementController::class, 'index'])
+    ->name('customer.ukuran.index');
+
+// Create measurement profile page
+Route::get('/customer/ukuran/tambah', [MeasurementController::class, 'create'])
+    ->name('customer.ukuran.create');
+
+// Simpan measurement profile
+Route::post('/customer/ukuran', [MeasurementController::class, 'store'])
+    ->name('customer.ukuran.store');

@@ -30,26 +30,26 @@
             <div class="col-lg-8">
 
                 <div class="card border-0 shadow-sm p-4 p-md-5">
-                    <form>
-
+                    <form action="{{ route('customer.ukuran.store') }}" method="POST">
+                        @csrf
                         <h5 class="mb-4">Informasi Profil</h5>
 
                         <div class="mb-4">
                             <label class="form-label">Nama Profil</label>
-                            <input type="text" class="form-control"
+                            <input type="text" name="profile_name" class="form-control"
                                 placeholder="Contoh: Ukuran Saya">
                         </div>
 
                         <div class="mb-4">
                             <label class="form-label">Pemilik Ukuran</label>
-                            <select class="form-select">
-                                <option value="">Pilih pemilik ukuran</option>
-                                <option>Diri Sendiri</option>
-                                <option>Ibu</option>
-                                <option>Ayah</option>
-                                <option>Adik</option>
-                                <option>Kakak</option>
-                                <option>Lainnya</option>
+                            <select name="owner" class="form-select" required>
+                                    <option value="">Pilih pemilik ukuran</option>
+                                    <option value="Diri Sendiri">Diri Sendiri</option>
+                                    <option value="Ibu">Ibu</option>
+                                    <option value="Ayah">Ayah</option>
+                                    <option value="Adik">Adik</option>
+                                    <option value="Kakak">Kakak</option>
+                                    <option value="Lainnya">Lainnya</option>
                             </select>
                         </div>
 
@@ -111,9 +111,7 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
+                                        <input type="number" name="lingkar_dada" class="form-control" step="0.1"
                                             placeholder="Contoh: 90">
 
                                     </div>
@@ -168,10 +166,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 80">
+                                        <input type="number" name="lingkar_pinggang" class="form-control" step="0.1"
+                                            placeholder="Contoh: 90">
 
                                     </div>
                                 </div>
@@ -225,11 +221,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
+                                        <input type="number" name="lingkar_pinggul" class="form-control" step="0.1"
                                             placeholder="Contoh: 100">
-
                                     </div>
                                 </div>
                             </div>
@@ -281,9 +274,7 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
+                                        <input type="number" name="tinggi_pinggul" class="form-control" step="0.1"
                                             placeholder="Contoh: 10">
 
                                     </div>
@@ -338,10 +329,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 10">
+                                        <input type="number" name="lebar_bahu" class="form-control" step="0.1"
+                                            placeholder="Contoh: 50">
 
                                     </div>
                                 </div>
@@ -394,10 +383,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 180">
+                                        <input type="number" name="panjang_badan" class="form-control" step="0.1"
+                                            placeholder="Contoh: 120">
 
                                     </div>
                                 </div>
@@ -448,9 +435,7 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
+                                        <input type="number" name="panjang_muka" class="form-control" step="0.1"
                                             placeholder="Contoh: 80">
 
                                     </div>
@@ -503,10 +488,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 30">
+                                        <input type="number" name="panjang_punggung" class="form-control" step="0.1"
+                                            placeholder="Contoh: 60">
 
                                     </div>
                                 </div>
@@ -558,10 +541,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 70">
+                                        <input type="number" name="panjang_dress" class="form-control" step="0.1"
+                                            placeholder="Contoh: 120">
 
                                     </div>
                                 </div>
@@ -614,9 +595,7 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
+                                        <input type="number" name="lingkar_pisak" class="form-control" step="0.1"
                                             placeholder="Contoh: 30">
                                     
                                     </div>
@@ -669,10 +648,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 12">
+                                        <input type="number" name="lingkar_bawah_celana" class="form-control" step="0.1"
+                                            placeholder="Contoh: 20">
 
                                     </div>
                                 </div>
@@ -725,10 +702,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 30">
+                                        <input type="number" name="lingkar_paha" class="form-control" step="0.1"
+                                            placeholder="Contoh: 60">
 
                                     </div>
                                 </div>
@@ -780,10 +755,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 70">
+                                        <input type="number" name="panjang_bawahan" class="form-control" step="0.1"
+                                            placeholder="Contoh: 90">
 
                                     </div>
                                 </div>
@@ -835,10 +808,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 70">
+                                        <input type="number" name="lingkar_ketiak" class="form-control" step="0.1"
+                                            placeholder="Contoh: 14">
 
                                     </div>
                                 </div>
@@ -891,10 +862,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 60">
+                                        <input type="number" name="panjang_lengan" class="form-control" step="0.1"
+                                            placeholder="Contoh: 50">
 
                                     </div>
                                 </div>
@@ -947,10 +916,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 12">
+                                        <input type="number" name="lingkar_lengan_atas" class="form-control" step="0.1"
+                                            placeholder="Contoh: 20">
 
                                     </div>
                                 </div>
@@ -1003,10 +970,8 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 8">
+                                        <input type="number" name="lingkar_pergelangan_tangan" class="form-control" step="0.1"
+                                            placeholder="Contoh: 10">
 
                                     </div>
                                 </div>
@@ -1049,7 +1014,7 @@
                                         <p class="text-muted text-center mb-3"
                                             style="font-size: 12px; line-height: 1.6;">
                                             Lingkarkan pita meteran mengelilingi pangkal leher bagian bawah secara pas tanpa menekan kulit,
-                                            lalu beri sedikit kelonggaran (sekitar 1 jari) agar kerah nyaman saat dipakai..
+                                            lalu beri sedikit kelonggaran (sekitar 1 jari) agar kerah nyaman saat dipakai.
                                         </p>
                                         <hr class="my-3">
 
@@ -1059,25 +1024,119 @@
                                             Hasil Pengukuran (cm)
                                         </label>
 
-                                        <input type="number"
-                                            step="0.1"
-                                            class="form-control form-control-sm"
-                                            placeholder="Contoh: 13">
+                                        <input type="number" name="lingkar_leher" class="form-control" step="0.1"
+                                            placeholder="Contoh: 90">
 
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6 mb-4">
-                                <label class="form-label">Tinggi Puncak Dada (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 16">
-                                <small class="text-muted">Ukur dengan menarik pita meteran secara lurus vertikal dari titik puncak payudara ke bawah hingga menyentuh tali patokan di pinggang.</small>
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
+
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                19
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Tinggi Puncak Dada (Wanita)
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/ukuran tinggi puncak payudara.jpg') }}"
+                                                alt="Cara mengukur tinggi puncak dada"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Diukur mulai dari titik bahu bagian atas dekat pangkal leher, 
+                                            lalu ditarik lurus ke bawah hingga tepat pada bagian puncak dada.
+                                        </p>
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number" name="tinggi_puncak_dada" class="form-control" step="0.1"
+                                            placeholder="Contoh: 25">
+
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="col-md-6 mb-4">
-                                <label class="form-label">Jarak Puncak Dada (cm)</label>
-                                <input type="number" step="0.1" class="form-control" placeholder="Contoh: 16">
-                                <small class="text-muted">Ujung meteran tepat di titik puncak payudara sebelah kiri, lalu tarik mendatar secara lurus menuju titik puncak payudara sebelah kanan.</small>
+                                <div class="card border-0 shadow-sm rounded-4 h-100">
+                                    <div class="card-body p-3">
+
+                                        <!-- Judul -->
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width: 34px; height: 34px; background: #d9a29b; color: white; font-size: 13px;">
+                                                20
+                                            </span>
+
+                                            <h5 class="mb-0"
+                                                style="font-family: 'Playfair Display', serif;">
+                                                Jarak Puncak Dada (Wanita)
+                                            </h5>
+
+                                            <span class="badge rounded-pill ms-auto"
+                                                style="background: #f8e8e4; color: #76574f;">
+                                                cm
+                                            </span>
+                                        </div>
+
+                                        <hr class="my-3">
+
+                                        <!-- Gambar -->
+                                        <div class="text-center mb-3">
+                                            <img src="{{ asset('img/ukuran/J.PD.png') }}"
+                                                alt="Cara mengukur jarak puncak dada"
+                                                class="img-fluid rounded-3"
+                                                style="width: 100%; max-width: 230px; height: 170px; object-fit: contain;">
+                                        </div>
+
+                                        <!-- Caption -->
+
+                                        <p class="text-muted text-center mb-3"
+                                            style="font-size: 12px; line-height: 1.6;">
+                                            Diukur secara mendatar dari titik puncak dada sebelah 
+                                            kanan ke titik puncak dada sebelah kiri dalam keadaan pas.
+                                        </p>
+                                        <hr class="my-3">
+
+                                        <!-- Input -->
+                                        <label class="form-label fw-semibold"
+                                            style="font-size: 13px;">
+                                            Hasil Pengukuran (cm)
+                                        </label>
+
+                                        <input type="number" name="jarak_puncak_dada" class="form-control" step="0.1"
+                                            placeholder="Contoh: 10">
+
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -1103,7 +1162,7 @@
                             Batal
                         </a>
 
-                        <button type="button" class="btn btn-brand">
+                        <button type="submit" class="btn btn-brand">
                             Simpan Profil
                         </button>
 
